@@ -26,7 +26,7 @@ class StockProfit:
         index_current_number = self.PROFIT_LIST.index(number)
 
         # in the result list comprehension getting indexes and int for bigger profit
-        result = [[idx, x] for idx, x in enumerate(self.PROFIT_LIST) if number < x and idx > index_current_number]
+        result = [[idx, cost] for idx, cost in enumerate(self.PROFIT_LIST) if number < cost and idx > index_current_number]
         if len(result) > 1:
             # get max result of more than 1 possible profit from self.PROFIT_LIST
 
